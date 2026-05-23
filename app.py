@@ -20,7 +20,7 @@ def index():
         predict = model.predict(vector.transform([cleaned_URL]))[0]
         #print(predict)
         if predict == 'bad':
-            predict = "This is a Phishing Website!!"
+            predict = "This is a Phishing Website NOT SECURED!!"
         elif predict =='good':
             predict = "This is a Secure Website!!"
         else :
