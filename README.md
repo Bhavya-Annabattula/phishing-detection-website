@@ -1,62 +1,69 @@
- AI-Powered Phishing Detection System
----------------------------------------
+# AI-Powered Phishing Detection System
+A cybersecurity web application that detects phishing URLs in real time using 
+Machine Learning trained on 109,870+ URLs.
 
-A cybersecurity web application that uses Machine Learning and NLP techniques to detect phishing URLs in real time.
-
-\## Live Demo
+## Live Demo
 https://phishing-detection-website-l5jy.onrender.com/
+> Note: Hosted on Render free tier — allow 30–60s for cold start on first load.
 
-\## About the Project
-Phishing attacks are one of the most common cybersecurity threats today. This project addresses that problem by analyzing URL patterns using Machine Learning to determine whether a website is legitimate or malicious.
+## Problem Statement
+Phishing attacks account for over 36% of data breaches globally. Existing 
+blocklists fail against newly registered phishing domains. This project takes 
+a feature-engineering approach — analyzing structural URL patterns to classify 
+URLs without relying on known-bad lists.
 
-\## How It Works
-1. User enters a URL
-2. The ML model analyzes URL patterns and features
-3. The system instantly predicts if the URL is legitimate or a phishing attempt
+## How It Works
+1. User submits a URL
+2. Feature extractor parses 15+ URL characteristics (see Features section)
+3. Logistic Regression model returns legitimate / phishing prediction instantly
 
-\## Model Performance
-| Metric | Score |
-|--------|-------|
-| Accuracy | 97% |
-| Precision | 91% |
-| Recall | 97% |
-| Dataset Size | 109,870+ URLs |
+## Features Engineered
+- URL length, number of dots, hyphens, underscores
+- Presence of `@`, `//`, `-` in domain
+- Subdomain depth
+- Use of IP address instead of domain name
+- HTTPS presence
+- URL entropy (randomness score)
+- TF-IDF vectorization of URL tokens
 
-\## Model Comparison
-| Model | Accuracy |
-|-------|----------|
-| Logistic Regression | 97% |
-| Multinomial Naive Bayes | 96% |
+## Model Performance (Logistic Regression — Production Model)
+| Metric    | Score |
+|-----------|-------|
+| Accuracy  | 97%   |
+| Precision | 91%   |
+| Recall    | 97%   |
+| F1 Score  | 0.94  |
+| Dataset   | 109,870 URLs |
 
-\## Tech Stack
-- Backend: Python, Flask
-- Machine Learning: Scikit-learn, Logistic Regression, Multinomial Naive Bayes
-- Frontend: HTML, Tailwind CSS
-- Deployment: Render
+High recall is intentionally prioritized — it is safer to flag a legitimate 
+URL as suspicious than to miss an actual phishing attempt.
 
-\## Installation and Setup
-1. Clone the repository
+## Model Comparison
+| Model                  | Accuracy |
+|------------------------|----------|
+| Logistic Regression    | 97%      |
+| Multinomial Naive Bayes| 96%      |
 
+Logistic Regression selected for production due to better precision-recall 
+balance and interpretability.
+
+## Tech Stack
+- **Backend:** Python, Flask
+- **ML:** Scikit-learn (Logistic Regression, Multinomial Naive Bayes)
+- **Feature Engineering:** Custom URL parser + TF-IDF vectorization
+- **Frontend:** HTML, Tailwind CSS
+- **Deployment:** Render
+
+## Installation
+```bash
 git clone https://github.com/Bhavya-Annabattula/phishing-detection-website.git
-
 cd phishing-detection-website
-
-2. Install dependencies
-
 pip install -r requirements.txt
-
-3. Run the application
-
 python app.py
+# Visit http://localhost:5000
+```
 
-4. Open your browser and go to
-
-http://localhost:5000 ---- it runs locally in your system
-
-\## Author
-Bhavya Annabattula
-- LinkedIn: https://www.linkedin.com/in/bhavya-annabattula-692112320
-- GitHub: https://github.com/Bhavya-Annabattula
-
----
-
+## Author
+**Bhavya Annabattula**  
+[LinkedIn](https://www.linkedin.com/in/bhavya-annabattula-692112320) | 
+[GitHub](https://github.com/Bhavya-Annabattula)
