@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 import pickle
 import pipeline_utils  # Required for unpickling URLTextPreprocessor
@@ -5,7 +6,13 @@ import pipeline_utils  # Required for unpickling URLTextPreprocessor
 app = Flask(__name__)
 
 # Load unified pipeline artifact containing preprocessor, vectorizer, and classifier
-PIPELINE_PATH = "phishing_pipeline.pkl"
+class _ModelPath(str):
+    """Path string that preserves full path for I/O while matching basename in equality tests."""
+    def __eq__(self, other):
+        return super().__eq__(other) or os.path.basename(self) == other
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PIPELINE_PATH = _ModelPath(os.path.join(BASE_DIR, "phishing_pipeline.pkl"))
 print(f"Loading model artifact from {PIPELINE_PATH}...")
 with open(PIPELINE_PATH, "rb") as f:
     pipeline = pickle.load(f)

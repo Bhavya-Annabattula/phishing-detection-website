@@ -52,3 +52,4 @@ phishing_site_urls_clean.csv
 
 # Large trained pipeline model artifacts (>7MB binary pickles)
 phishing_pipeline*.pkl
+!phishing_pipeline.pkl
