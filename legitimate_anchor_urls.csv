@@ -1,0 +1,66 @@
+url,label,source,domain,rationale
+https://www.paypal.com,good,Official Root Portal,paypal.com,Canonical homepage for global payment platform
+https://www.paypal.com/,good,Official Root Portal,paypal.com,Canonical homepage with trailing slash
+https://www.paypal.com/us/home,good,Official Regional Portal,paypal.com,Official US localized portal
+https://www.paypal.com/signin,good,Official Auth Entry,paypal.com,Official authentication portal
+https://www.paypal.com/us/signin,good,Official Auth Entry,paypal.com,Official US authentication endpoint
+https://www.paypal.com/us/webapps/mpp/account-selection,good,Official Onboarding,paypal.com,Official registration flow
+https://www.paypal.com/us/smarthelp/contact-us,good,Official Support,paypal.com,Official customer support center
+https://www.paypal.com/us/security,good,Official Security Center,paypal.com,Official user security guide
+https://www.google.com,good,Official Root Portal,google.com,Canonical search engine homepage
+https://www.google.com/,good,Official Root Portal,google.com,Canonical search homepage with trailing slash
+https://accounts.google.com,good,Official Auth Subdomain,google.com,Google Identity authentication entry
+https://accounts.google.com/signin,good,Official Auth Entry,google.com,Google Identity sign-in flow
+https://mail.google.com,good,Official Service Subdomain,google.com,Official Gmail web client
+https://docs.google.com,good,Official Service Subdomain,google.com,Official Google Docs workspace
+https://support.google.com,good,Official Support,google.com,Google centralized help center
+https://maps.google.com,good,Official Maps Service,google.com,Official Google Maps interface
+https://www.amazon.com,good,Official Root Portal,amazon.com,Canonical e-commerce store homepage
+https://www.amazon.com/,good,Official Root Portal,amazon.com,Canonical store homepage with trailing slash
+https://www.amazon.com/gp/help/customer/display.html,good,Official Help Portal,amazon.com,Amazon customer service portal
+https://www.amazon.com/gp/css/homepage.html,good,Official Account Portal,amazon.com,Amazon account management dashboard
+https://www.amazon.com/ap/signin,good,Official Auth Entry,amazon.com,Amazon authentication gateway
+https://music.amazon.com,good,Official Streaming Service,amazon.com,Amazon Music streaming platform
+https://aws.amazon.com,good,Official Cloud Portal,amazon.com,Amazon Web Services infrastructure portal
+https://www.microsoft.com,good,Official Root Portal,microsoft.com,Canonical Microsoft corporate portal
+https://www.microsoft.com/,good,Official Root Portal,microsoft.com,Canonical Microsoft homepage with trailing slash
+https://www.microsoft.com/en-us/windows,good,Official Product Page,microsoft.com,Official Windows OS landing page
+https://support.microsoft.com,good,Official Support,microsoft.com,Microsoft technical support portal
+https://account.microsoft.com,good,Official Account Portal,microsoft.com,Microsoft centralized user account portal
+https://azure.microsoft.com,good,Official Cloud Portal,microsoft.com,Microsoft Azure cloud services portal
+https://www.apple.com,good,Official Root Portal,apple.com,Canonical Apple hardware & software homepage
+https://www.apple.com/,good,Official Root Portal,apple.com,Canonical Apple homepage with trailing slash
+https://www.apple.com/iphone/,good,Official Product Page,apple.com,Official iPhone product directory
+https://support.apple.com,good,Official Support,apple.com,Apple technical support center
+https://appleid.apple.com,good,Official Auth Portal,apple.com,Apple ID authentication management
+https://developer.apple.com,good,Official Developer Portal,apple.com,Apple developer documentation portal
+https://www.chase.com,good,Official Banking Portal,chase.com,JPMorgan Chase consumer banking homepage
+https://www.chase.com/,good,Official Banking Portal,chase.com,Chase banking homepage with trailing slash
+https://secure.chase.com,good,Official Secure Banking,chase.com,Chase online banking secure entry
+https://www.chase.com/personal/credit-cards,good,Official Product Line,chase.com,Chase credit cards product page
+https://www.chase.com/digital/customer-service,good,Official Customer Service,chase.com,Chase digital customer support
+https://www.bankofamerica.com,good,Official Banking Portal,bankofamerica.com,Bank of America consumer banking portal
+https://www.bankofamerica.com/,good,Official Banking Portal,bankofamerica.com,Bank of America homepage with trailing slash
+https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go,good,Official Secure Banking,bankofamerica.com,Bank of America online banking login
+https://www.bankofamerica.com/help/overview/,good,Official Help Center,bankofamerica.com,Bank of America customer help center
+https://www.netflix.com,good,Official Root Portal,netflix.com,Netflix entertainment streaming homepage
+https://www.netflix.com/,good,Official Root Portal,netflix.com,Netflix streaming homepage with trailing slash
+https://www.netflix.com/login,good,Official Auth Entry,netflix.com,Netflix subscriber sign-in portal
+https://help.netflix.com,good,Official Help Center,netflix.com,Netflix subscriber support center
+https://github.com,good,Official Developer Platform,github.com,GitHub software development homepage
+https://github.com/login,good,Official Auth Entry,github.com,GitHub user authentication portal
+https://github.com/features,good,Official Product Page,github.com,GitHub platform features directory
+https://docs.github.com,good,Official Documentation,github.com,GitHub official technical documentation
+https://www.linkedin.com,good,Official Professional Network,linkedin.com,LinkedIn professional network homepage
+https://www.linkedin.com/login,good,Official Auth Entry,linkedin.com,LinkedIn member sign-in portal
+https://www.linkedin.com/feed/,good,Official Application Feed,linkedin.com,LinkedIn member news feed
+https://www.linkedin.com/help/linkedin,good,Official Help Center,linkedin.com,LinkedIn member support center
+https://www.facebook.com,good,Official Social Network,facebook.com,Facebook social network homepage
+https://www.facebook.com/login/,good,Official Auth Entry,facebook.com,Facebook member sign-in portal
+https://www.facebook.com/help/,good,Official Help Center,facebook.com,Facebook user support center
+https://www.instagram.com,good,Official Photo Platform,instagram.com,Instagram social photo homepage
+https://www.instagram.com/accounts/login/,good,Official Auth Entry,instagram.com,Instagram account login page
+https://about.instagram.com,good,Official Corporate Portal,instagram.com,Instagram official information center
+https://example.com,good,RFC 2606 Reserved Domain,example.com,IANA designated official example domain
+https://example.com/,good,RFC 2606 Reserved Domain,example.com,IANA example domain with trailing slash
+http://example.com,good,RFC 2606 Reserved Domain,example.com,IANA example domain HTTP endpoint

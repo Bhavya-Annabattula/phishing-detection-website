@@ -1,0 +1,111 @@
+url,expected_label,category,attack_type,rationale
+https://google.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of google.com
+https://www.google.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of google.com
+https://paypal.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of paypal.com
+https://www.paypal.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of paypal.com
+https://amazon.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of amazon.com
+https://www.amazon.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of amazon.com
+https://microsoft.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of microsoft.com
+https://www.microsoft.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of microsoft.com
+https://apple.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of apple.com
+https://www.apple.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of apple.com
+https://facebook.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of facebook.com
+https://www.facebook.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of facebook.com
+https://linkedin.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of linkedin.com
+https://www.linkedin.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of linkedin.com
+https://github.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of github.com
+https://www.github.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of github.com
+https://netflix.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of netflix.com
+https://www.netflix.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of netflix.com
+https://example.com,0,A_Canonical_Legitimate,None,Canonical root HTTPS domain of example.com
+https://www.example.com,0,A_Canonical_Legitimate,None,Canonical www HTTPS domain of example.com
+https://www.google.com/search?q=machine+learning+security,0,B_Legitimate_Navigation,None,Normal Google search results query
+https://www.google.com/maps/place/New+York,0,B_Legitimate_Navigation,None,Google Maps location navigation
+https://www.amazon.com/gp/bestsellers,0,B_Legitimate_Navigation,None,Amazon bestsellers store directory
+https://www.amazon.com/gp/help/customer/display.html,0,B_Legitimate_Navigation,None,Amazon official customer service help center
+https://www.microsoft.com/en-us/software-download/windows11,0,B_Legitimate_Navigation,None,Microsoft official software download portal
+https://www.microsoft.com/en-us/microsoft-365,0,B_Legitimate_Navigation,None,Microsoft 365 product page
+https://www.apple.com/shop/buy-iphone,0,B_Legitimate_Navigation,None,Apple official online retail store
+https://www.apple.com/support/products/,0,B_Legitimate_Navigation,None,Apple official support portal
+https://github.com/explore,0,B_Legitimate_Navigation,None,GitHub public explore page
+https://github.com/scikit-learn/scikit-learn/pulls,0,B_Legitimate_Navigation,None,GitHub open source repository pulls page
+https://www.netflix.com/browse,0,B_Legitimate_Navigation,None,Netflix catalog browsing route
+https://www.paypal.com/us/smarthelp/contact-us,0,B_Legitimate_Navigation,None,PayPal official help center contact page
+https://www.linkedin.com/feed/,0,B_Legitimate_Navigation,None,LinkedIn authenticated home feed route
+https://www.chase.com/personal/banking,0,B_Legitimate_Navigation,None,Chase consumer banking services page
+https://google.com.attacker.example/login,1,C_Subdomain_Lookalike,Subdomain Impersonation,google.com placed as subdomain on attacker.example root
+https://paypal.com.attacker.example/login,1,C_Subdomain_Lookalike,Subdomain Impersonation,paypal.com placed as subdomain on attacker.example root
+https://microsoft.com.attacker.example/login,1,C_Subdomain_Lookalike,Subdomain Impersonation,microsoft.com placed as subdomain on attacker.example root
+https://apple.com.attacker.example/account,1,C_Subdomain_Lookalike,Subdomain Impersonation,apple.com placed as subdomain on attacker.example root
+https://amazon.com.attacker.example/order-review,1,C_Subdomain_Lookalike,Subdomain Impersonation,amazon.com placed as subdomain on attacker.example root
+https://chase.com.attacker.example/signin,1,C_Subdomain_Lookalike,Subdomain Impersonation,chase.com placed as subdomain on attacker.example root
+https://netflix.com.attacker.example/billing-update,1,C_Subdomain_Lookalike,Subdomain Impersonation,netflix.com placed as subdomain on attacker.example root
+https://github.com.attacker.example/oauth/authorize,1,C_Subdomain_Lookalike,Subdomain Impersonation,github.com placed as subdomain on attacker.example root
+https://bankofamerica.com.attacker.example/login,1,C_Subdomain_Lookalike,Subdomain Impersonation,bankofamerica.com placed as subdomain on attacker.example root
+https://facebook.com.attacker.example/recover,1,C_Subdomain_Lookalike,Subdomain Impersonation,facebook.com placed as subdomain on attacker.example root
+https://attacker.example/google.com/login,1,D_Brand_in_Path,Path Impersonation,Google brand and domain simulated in path
+https://attacker.example/paypal/verify,1,D_Brand_in_Path,Path Impersonation,PayPal brand token in path for credential harvesting
+https://attacker.example/microsoft/security/login,1,D_Brand_in_Path,Path Impersonation,Microsoft security simulation in path
+https://attacker.example/apple/icloud-account/signin,1,D_Brand_in_Path,Path Impersonation,Apple iCloud simulation in path
+https://attacker.example/amazon/payment-update,1,D_Brand_in_Path,Path Impersonation,Amazon payment update simulation in path
+https://attacker.example/chase/online/logon.php,1,D_Brand_in_Path,Path Impersonation,Chase logon page spoofed in URL path
+https://attacker.example/netflix/membership/reactivate,1,D_Brand_in_Path,Path Impersonation,Netflix membership reactivation spoof in path
+https://attacker.example/bankofamerica/secure-auth,1,D_Brand_in_Path,Path Impersonation,Bank of America brand placed in path
+https://attacker.example/github/session/create,1,D_Brand_in_Path,Path Impersonation,GitHub session simulation in path
+https://attacker.example/linkedin/checkpoint/lg,1,D_Brand_in_Path,Path Impersonation,LinkedIn checkpoint spoof in path
+https://google-login.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Hyphenated brand impersonation in subdomain
+https://paypal-security.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Security-themed hyphenated brand subdomain
+https://microsoft-verify.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Verification-themed Microsoft subdomain
+https://apple-support.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Support-themed Apple subdomain
+https://amazon-prime-billing.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Billing-themed Amazon subdomain
+https://chase-identity-check.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Identity-themed Chase subdomain
+https://netflix-account-notice.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Account notice Netflix subdomain
+https://github-auth-token.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Auth-themed GitHub subdomain
+https://bankofamerica-alert.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Alert-themed Bank of America subdomain
+https://linkedin-message-notification.attacker.example/,1,E_Brand_in_Subdomain,Subdomain Brand Affix,Notification-themed LinkedIn subdomain
+https://paypa1.example,1,F_Typosquatting,Typosquatting/Homoglyph,Digit 1 substituted for letter l in paypal
+https://g00gle.example,1,F_Typosquatting,Typosquatting/Homoglyph,Zeros substituted for o's in google
+https://amaz0n.example,1,F_Typosquatting,Typosquatting/Homoglyph,Zero substituted for letter o in amazon
+https://micros0ft.example,1,F_Typosquatting,Typosquatting/Homoglyph,Zero substituted for letter o in microsoft
+https://app1e.example,1,F_Typosquatting,Typosquatting/Homoglyph,Digit 1 substituted for letter l in apple
+https://faceb00k.example,1,F_Typosquatting,Typosquatting/Homoglyph,Zeros substituted for o's in facebook
+https://netf1ix.example,1,F_Typosquatting,Typosquatting/Homoglyph,Digit 1 substituted for letter l in netflix
+https://g1thub.example,1,F_Typosquatting,Typosquatting/Homoglyph,Digit 1 substituted for letter i in github
+https://1inkedin.example,1,F_Typosquatting,Typosquatting/Homoglyph,Digit 1 substituted for letter l in linkedin
+https://chazebank.example,1,F_Typosquatting,Typosquatting/Homoglyph,Phonetic typosquatted chase bank variant
+http://192.168.1.100/secure-login/paypal/index.php,1,G_Suspicious_Structure,Structural Anomaly,Raw IPv4 host with credential harvesting keywords
+http://10.0.0.1/admin/login.php?user=root&token=489274982739487239482,1,G_Suspicious_Structure,Structural Anomaly,Raw IPv4 host with long query and login path
+https://a.b.c.d.e.f.phishing-hub.example/login,1,G_Suspicious_Structure,Structural Anomaly,Excessive subdomain hierarchy depth (6 levels)
+https://login.user@attacker.example/account-update,1,G_Suspicious_Structure,Structural Anomaly,Embedded @ symbol obfuscation in URL authority
+https://attacker.example/%20%20%2Flogin%2F%3Fref%3Dsecure%26auth%3D1,1,G_Suspicious_Structure,Structural Anomaly,Heavy percent-encoded character evasion
+https://attacker.example:8443/verify-credentials/login?id=8943729837498237498237498234792384792384,1,G_Suspicious_Structure,Structural Anomaly,Non-standard high port + massive digit count (>30) in query
+https://verify-account-security-alert-urgent-update.portal-session.example/auth/login,1,G_Suspicious_Structure,Structural Anomaly,Deep path + keyword stuffing + multi-hyphen hostname
+http://198.51.100.25:8080/ebanking/signon.jsp?session=873495873498573495873495874395,1,G_Suspicious_Structure,Structural Anomaly,Raw IPv4 + non-standard port + banking keyword + extreme digits
+https://aws.amazon.com/ec2/pricing/on-demand/?nc2=h_mo,0,H_Benign_Structurally_Complex,None,Multi-segment path + subdomains + query param on legitimate AWS
+https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs?redirectedfrom=MSDN,0,H_Benign_Structurally_Complex,None,Complex path hierarchy with hyphens and query parameter on official Microsoft Docs
+https://developer.apple.com/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data,0,H_Benign_Structurally_Complex,None,Deep legitimate path (5 segments) on developer.apple.com
+https://github.com/torvalds/linux/commit/8016e29306b3a24b07f872898b9a1d48c3b9b47e,0,H_Benign_Structurally_Complex,None,Long git SHA hexadecimal hash (40 characters) in legitimate GitHub URL
+https://www.google.com/search?hl=en&tbm=isch&q=cybersecurity+defense&oq=cybersecurity+defense&aqs=mobile-gws-lite,0,H_Benign_Structurally_Complex,None,Multiple query parameters and hyphens in legitimate Google search
+https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3,0,H_Benign_Structurally_Complex,None,Fragment identifier with underscore and dot on legitimate Wikipedia
+https://store.steampowered.com/app/1091500/Cyberpunk_2077/?snr=1_7_7_230_150_1,0,H_Benign_Structurally_Complex,None,Numeric app ID (7 digits) + complex query parameters on official Steam store
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy,0,H_Benign_Structurally_Complex,None,Long nested path with multiple hyphens and camelCase in MDN Web Docs
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7095397/?report=classic,0,H_Benign_Structurally_Complex,None,Two-part multi-subdomain government research repository with numeric ID
+https://support.google.com/accounts/answer/185839?hl=en&ref_topic=7188760,0,H_Benign_Structurally_Complex,None,Account keywords and numeric IDs on legitimate Google Support
+https://www.dropbox.com,0,I_Brand_Generalization_Unseen,Unseen Legitimate Canonical,Dropbox official canonical homepage (not in 65 anchors)
+https://www.spotify.com,0,I_Brand_Generalization_Unseen,Unseen Legitimate Canonical,Spotify official canonical homepage (not in 65 anchors)
+https://www.adobe.com,0,I_Brand_Generalization_Unseen,Unseen Legitimate Canonical,Adobe official canonical homepage (not in 65 anchors)
+https://www.coinbase.com,0,I_Brand_Generalization_Unseen,Unseen Legitimate Canonical,Coinbase official canonical homepage (not in 65 anchors)
+https://www.wellsfargo.com,0,I_Brand_Generalization_Unseen,Unseen Legitimate Canonical,Wells Fargo official canonical homepage (not in 65 anchors)
+https://dropbox.com.attacker.example/login,1,I_Brand_Generalization_Unseen,Unseen Subdomain Impersonation,Dropbox brand spoofed as subdomain on attacker root
+https://spotify.com.attacker.example/account,1,I_Brand_Generalization_Unseen,Unseen Subdomain Impersonation,Spotify brand spoofed as subdomain on attacker root
+https://adobe.com.attacker.example/update,1,I_Brand_Generalization_Unseen,Unseen Subdomain Impersonation,Adobe brand spoofed as subdomain on attacker root
+https://coinbase-verify.attacker.example/auth,1,I_Brand_Generalization_Unseen,Unseen Subdomain Hyphenated,Coinbase brand with hyphenated auth subdomain
+https://attacker.example/wellsfargo/signin.php,1,I_Brand_Generalization_Unseen,Unseen Brand in Path,Wells Fargo brand placed in path on attacker root
+https://www.example.com/,0,J_Lexical_Minimal_Pairs,Minimal Pair Baseline,Legitimate example.com root
+https://www.example.com.attacker.example/,1,J_Lexical_Minimal_Pairs,Minimal Pair Subdomain,Same lexical tokens appended to attacker root
+https://www.example.com/account,0,J_Lexical_Minimal_Pairs,Minimal Pair Baseline,Legitimate example account path
+https://attacker.example/example.com/account,1,J_Lexical_Minimal_Pairs,Minimal Pair Path,Same lexical tokens shifted from host to path
+https://www.example.com/search?q=test,0,J_Lexical_Minimal_Pairs,Minimal Pair Baseline,Legitimate search URL
+https://example-login.attacker.example/search?q=test,1,J_Lexical_Minimal_Pairs,Minimal Pair Hyphen Subdomain,Identical query with attack host
+https://www.paypal.com/,0,J_Lexical_Minimal_Pairs,Minimal Pair Baseline,Legitimate PayPal canonical
+https://www.paypal.com.attacker.example/,1,J_Lexical_Minimal_Pairs,Minimal Pair Subdomain,PayPal canonical placed as subdomain

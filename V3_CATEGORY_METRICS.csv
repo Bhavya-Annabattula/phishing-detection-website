@@ -1,0 +1,11 @@
+category,total_cases,v1_accuracy,v2_accuracy,v3_accuracy,v3_phishing_recall,v3_false_negative_rate,v3_false_positive_rate,v3_mean_bad_prob
+A_Canonical_Legitimate,20,30.0,0.0,100.0,N/A,N/A,0.0,0.0
+B_Legitimate_Navigation,14,50.0,0.0,100.0,N/A,N/A,0.0,0.0
+C_Subdomain_Lookalike,10,70.0,100.0,10.0,10.0,90.0,N/A,10.84
+D_Brand_in_Path,10,100.0,100.0,10.0,10.0,90.0,N/A,16.28
+E_Brand_in_Subdomain,10,100.0,100.0,10.0,10.0,90.0,N/A,8.81
+F_Typosquatting,10,100.0,100.0,0.0,0.0,100.0,N/A,0.0
+G_Suspicious_Structure,8,100.0,100.0,62.5,62.5,37.5,N/A,59.09
+H_Benign_Structurally_Complex,10,60.0,0.0,100.0,N/A,N/A,0.0,0.0
+I_Brand_Generalization_Unseen,10,50.0,50.0,60.0,20.0,80.0,0.0,7.41
+J_Lexical_Minimal_Pairs,8,50.0,50.0,50.0,0.0,100.0,0.0,0.89

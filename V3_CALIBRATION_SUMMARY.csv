@@ -1,0 +1,9 @@
+metric,value
+total_test_samples,101439.0
+prob_ge_0.99,13358.0
+prob_ge_0.999,10506.0
+prob_le_0.01,50859.0
+prob_le_0.001,35565.0
+prob_mean,0.22344506532468622
+prob_std,0.3753091385449836
+prob_median,0.009829175814613178
